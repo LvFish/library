@@ -1,0 +1,32 @@
+.content{
+    margin-top:10rpx; 
+}
+
+.one{
+    height: 100rpx;
+    margin-top:20rpx;
+    margin-left:30rpx;
+    margin-right:30rpx;  
+
+}
+
+.title{
+    float: left;
+    margin-bottom:20rpx; 
+    position: relative;
+    top: 10rpx;
+}
+
+.crowImg{
+    float: right;
+    height: 60rpx;
+    width: 60rpx;
+}
+
+.line{
+    clear: both;
+    width: 97%;
+    height: 0px;
+    border: 1rpx ridge gray; 
+}
+

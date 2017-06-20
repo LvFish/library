@@ -1,0 +1,27 @@
+<view class="content">
+  <view class="top">
+    <view class="search">
+      <form>
+        <view class="search_input">
+         <icon class="sub" size="30"bindtap="submit" type="search" ></icon>
+          <input placeholder="请输入检索内容" focus="true" bindinput="inputChange" />
+        </view>
+        <view class="button"  bindtap="submit" type="search" >搜索</view>
+        <view class="line"></view>
+        <view class="classes">
+          <view class="name" style="background:{{cone}}" bindtap="one">书名</view>
+          <view class="name" style="background:{{ctwo}}" bindtap="two">作者</view>
+          <view class="name" style="background:{{cthree}}" bindtap="three">ISBN</view>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>
+  <view class="history" >
+    <!--<view class="bottom_title">搜索历史记录</view>-->
+    <block wx:for="{{history}}">
+      <view class="history_info" id="{{item}}" bindtap="bindHistory">{{item}}</view>
+    </block>
+  </view>
+ <!--<button class="classname" size="mini">清空搜索记录</button>-->
+

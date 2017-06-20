@@ -1,0 +1,10 @@
+<view class="content">
+
+  <block wx:for="{{classify}}">
+    <view class="one" bindtap="toast" id="{{item}}">
+      <view class="title">{{item}}</view>
+      <image class="crowImg" src="{{src}}"></image>
+      <view class="line"></view>
+    </view>
+  </block>
+</view>

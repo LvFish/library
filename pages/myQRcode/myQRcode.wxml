@@ -1,0 +1,11 @@
+<view class="content">
+<view class="tittle">hello</view>
+<view class="qrcode">
+  <image src="{{url}}" class="one"></image>
+</view>
+<view class="bottom"style="white-space:pre">
+  二维码会每分钟自动更新，并在生成后短时间内有效。
+扫描二维码就可以借书啦！
+</view>
+</view>
+<!--<view class="classname">{{second_2}}</view>-->

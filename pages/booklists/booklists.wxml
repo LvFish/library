@@ -1,0 +1,28 @@
+<view class="content" scrolly-y="true">
+  <view class="state">
+    <text id="state_text">一共有{{bookNum}}本书</text>
+  </view>
+
+  <view wx:if="{{showV==0}}">
+    <view class="no">没有搜索结果!</view>
+  </view>
+
+  <loading hidden = "{{hide}}">加载中...</loading>
+
+    <block wx:for="{{bookInfo}}">
+      <view class="book_content">
+
+        <view class="book_ex" bindtap="toast" id="{{item.isbn+'@'+item.bookNumber+'@'+item.leftNumber}}">
+          <image src="{{item.url}}" class="book_img"></image>
+
+          <view class="book_info">
+            <view>书名：{{item.bookName}}</view>
+            <view>作者：{{item.author}}</view>
+            <view>藏书量：{{item.bookNumber}}</view>
+            <view>可借数量：{{item.leftNumber}}</view>
+            <view>isbn：{{item.isbn}}</view>
+          </view>
+        </view>
+      </view>
+    </block>
+</view>

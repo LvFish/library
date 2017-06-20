@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/scanBefore/scanBefore",
+    
+    "pages/returnQRcode/returnQRcode",
+    "pages/forget/forget",
+    "pages/changePassword/changePassword",
+    "pages/register/register",
+    "pages/booklists/booklists",
+    "pages/search/search",
+    "pages/index/index",
+    "pages/myQRcode/myQRcode",
+    "pages/scan/scan",
+    "pages/bookListClassify/bookListClassify",
+    "pages/bookInfo/bookInfo",
+    "pages/reserve/reserve",
+    "pages/classify/classify",  
+    "pages/myBorrow/myBorrow",    
+    "pages/history/history",
+    "pages/borrowBlank/borrowBlank",
+    "pages/user/user"
+  ],
+
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "lll借阅系统",
+    "navigationBarTextStyle":"black"
+  },
+
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "img/首页.png",
+      "selectedIconPath": "img/首页2.png"
+    },
+    {
+      "pagePath": "pages/scanBefore/scanBefore",
+      "text": "借书/还书",
+      "iconPath": "img/扫码1.png",
+      "selectedIconPath": "img/扫码2.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "我",
+      "iconPath": "img/用户.png",
+      "selectedIconPath": "img/用户2.png"
+    }]
+  }
+}

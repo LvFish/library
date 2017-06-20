@@ -1,0 +1,173 @@
+.generalize{
+    height: 120px;
+    width: 100%;
+    background-color: #F8F8FF;
+    margin-top:5px;
+    margin-bottom:6px; 
+    border-radius: 10rpx;   
+}
+
+.book_img{
+    position: relative;
+    float:left; 
+    width:240rpx;
+    height:230rpx;
+    min-height: 230rpx;
+    margin:5rpx 0rpx 5rpx 10rpx;
+    z-index: 1rpx;
+    flex: 0 0 32%;
+    box-sizing: border-box;
+}
+
+.bookInfo{
+    font-family:"微软雅黑",serif;
+    font-size:14px; 
+    position: relative;
+    /*top:6px;*/
+    /*margin-top:10rpx; */
+    float:right;
+    right:50rpx;
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    height: 250rpx;
+    width:350rpx;
+    text-overflow:ellipsis;
+    overflow:hidden; 
+    white-space:nowrap; 
+    padding-top:10rpx;
+    border-radius: 10rpx;
+   
+}
+
+.views{
+    margin-top:6px;
+    margin-bottom:6px;  
+}
+
+.tital{
+    background-color: #F8F8FF;
+    font-family: "微软雅黑",serif;
+    font-size: 17px; 
+    padding-left:6px;  
+}
+
+.initials{
+    height: 200px;
+}
+
+.function{
+    width: 100%;
+    position: relative;
+    bottom: 0rpx;   
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+.borrow{
+    float:left;
+    width: 30%;
+    margin-left:10px; 
+    margin-bottom:5px; 
+
+}
+
+.reserve{
+    float:right;
+    width: 30%; 
+    margin-right:10px; 
+    margin-bottom:5px;
+}
+
+.book_content{
+    margin-top:10px; 
+}
+
+
+.book_ex{
+  
+    background-color: #eeeeee;
+    margin-right:10rpx;
+    margin-left:10rpx;  
+    margin-bottom:10rpx;
+    height:120px;
+    display: flex;
+    min-height: 100rpx; 
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-top: 20rpx;
+    
+}
+
+.book_img{
+    position: relative;
+    float:left; 
+    width:240rpx;
+    height:230rpx;
+    min-height: 230rpx;
+    margin:5rpx 0rpx 5rpx 5rpx;
+    z-index: 1rpx;
+    flex: 0 0 32%;
+    box-sizing: border-box;
+}
+
+.book_info{ 
+    margin-top:10rpx; 
+    font-size:30rpx; 
+    font-family: "微软雅黑"; 
+    float:right;
+    position:absolute;
+    right:50rpx;
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    height: 250rpx;
+    width:350rpx;
+    text-overflow:ellipsis;
+    overflow:hidden; 
+    white-space:nowrap; 
+    padding-top:10rpx;
+    border-radius: 10rpx;
+    margin-bottom: 8rpx;
+ 
+}
+
+
+
+.swiper-tab{  
+    width: 100%;  
+    border-bottom: 2rpx solid #777777;  
+    text-align: center; 
+    background-color:  #F8F8FF; 
+  
+    
+}  
+
+.swiper-tab-list{  
+    font-size: 35rpx;  
+    /*display:flex;
+    flex-direction: row ; */
+     display: inline-block; 
+    width: 25%;
+    color: #777777;  
+}  
+.on{ 
+    color: #da7c0c;  
+    border-bottom: 4rpx solid #da7c0c;
+
+}  
+  
+.swiper-box{ 
+   display: block;
+   height: 50%; 
+   width: 100%; 
+   margin:5rpx;
+text-overflow:ellipsis;
+}  
+.swiper-box view{  
+    text-align: left; 
+    text-indent: 20rpx;
+    font-size: 35rpx; 
+    /*background-color:  #F8F8FF;*/
+    text-overflow:ellipsis;
+    overflow:hidden; 
+    white-space:pre-wrap;
+   
+}  

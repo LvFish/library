@@ -1,0 +1,2 @@
+<view class="classname" bindtap="returns">返回首页</view>
+<view class="classname" bindtap="re">若未出现扫码，请点击此处</view>

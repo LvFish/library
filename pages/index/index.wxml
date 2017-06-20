@@ -1,0 +1,86 @@
+<!--index.wxml-->
+<view class="page_1" bindtap="search_jump">
+  <view class="search_input" >
+      <icon class="sub" type="search" size="20"></icon>
+      <input bindfocus="search_jump" bindinput="search_jump" bindconfirm="search_jump" />
+  </view>
+</view>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <navigator url="{{item.link}}" hover-class="navigator-hover">
+        <image src="{{item.url}}" class="slide-image" width="355" height="150" />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="page">
+
+  <view class="classify">
+    <view class="classify_1">
+      <view class="one" bindtap="xiaoshuo">
+        <image style="width:100rpx; height:100rpx;" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2875324156,3381341574&fm=26&gp=0.jpg"></image>
+        <text>小说</text>
+      </view>
+      <view class="one" bindtap="tiyu">
+        <image style="width:100rpx; height:100rpx;" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1860589360,3019961339&fm=21&gp=0.jpg"></image>
+        <text>体育</text>
+      </view>
+    </view>
+
+    <view class="classify_2">
+      <view class="one" bindtap="wenhua">
+        <image style="width:100rpx; height:100rpx;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1497898622622&di=e7d1d86e34d6d4c6e63df24b4db261a3&imgtype=0&src=http%3A%2F%2Fpic.qiantucdn.com%2F58pic%2F17%2F31%2F56%2F63u58PIC5cR_1024.jpg"></image>
+        <text>文化</text>
+      </view>
+      
+      <view class="one" bindtap="meishi">
+        <image style="width:100rpx; height:100rpx;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1497888197&di=283b08ab6061e0f32ca1cbac0674cb05&src=http://img2.nipic.com/2008-01-04/200814135736363_1.jpg"></image>
+        <text>美食</text>
+      </view>
+    </view>
+
+    <view class="classify_3">
+      <view class="one" bindtap="lvyou">
+        <image style="width:100rpx; height:100rpx;" src="data:image/jpeg;base64,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"></image>
+        <text>旅游</text>
+      </view>
+
+      <view class="Button" bindtap="more">
+        <image style="width:100rpx; height:100rpx;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1498493911&di=af4f1e86afbaedef5c242cd4e97279cf&imgtype=jpg&er=1&src=http%3A%2F%2Fcdns2.freepik.com%2Ffree-photo%2Fplus-sign--ios-7-interface-symbol_318-35409.jpg"></image>
+        <text class="text">更多</text>
+      </view>
+
+    </view>
+  </view>
+
+
+
+  <view class="{{showView?'showV':'hideV'}}">
+    <text size="20">为你推荐</text>
+    <icon type="cancel" size="20" bindtap="closeShow" />
+    <block wx:for="{{bookInfo}}">
+      <view class="book-list" bindtap="toast" id="{{item.isbn+'@'+item.bookNumber+'@'+item.leftNumber}}">
+        <view class="book-image">
+          <image src="{{item.url}}" mode="aspectFit"></image>
+        </view>
+        <view class="book-info">
+          <view class="book-info-style">
+            <view>书名:{{item.bookName}}</view>
+            <view>作者:{{item.author}}</view>
+            <view>藏书量:{{item.bookNumber}}</view>
+            <!--<view>出版信息:{{item.publish}}</view>-->
+            <view>可借数量:{{item.leftNumber}}</view>
+            <view>isbn：{{item.isbn}}</view>
+          </view>
+        </view>
+      </view>
+    </block>
+
+
+  </view>
+
+
+
+</view>

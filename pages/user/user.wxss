@@ -1,0 +1,64 @@
+		.line{
+  margin-top: 10px;
+  width: 100%;
+  height:100%;
+  background-color: white;
+  padding-bottom: 10rpx;
+}
+.table1 label{
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	padding:  8rpx 20rpx;
+	position: relative;
+	z-index: -1;
+	display: block;
+	height: 100%;
+	color: #777;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+  text-align: center;
+	line-height: 35px;
+	font-size: 19px;
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
+	background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
+	box-shadow: 
+		0px 0px 0px 1px rgba(155,155,155,0.3), 
+		1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+		0px 2px 2px rgba(0,0,0,0.1);
+}
+.table1 lable:hover{
+	background: #c6e1ec;
+	color: #3d7489;
+	text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+	box-shadow: 
+		0px 0px 0px 1px rgba(155,155,155,0.3), 
+		0px 2px 2px rgba(0,0,0,0.1);
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496338551212&di=f20d894b4757f4e279a3a5c7f3739052&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F29%2F72%2F32658PIC7gv_1024.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ z-index: -1;
+}
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 100rpx 50rpx 50rpx 50rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: black;
+  margin-bottom: 100rpx;
+}
+.crowImg{
+    float: right;
+    height: 60rpx;
+    width: 60rpx;
+}

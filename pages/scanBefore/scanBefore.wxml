@@ -1,0 +1,22 @@
+<view class="table1">
+  <navigator url="/pages/scan/scan">
+  <image class="crowImg" src="{{src}}"></image>
+    <label>扫一扫</label>
+  </navigator>
+</view>
+
+
+<view class="table1">
+  <navigator url="/pages/myQRcode/myQRcode">
+  <image class="crowImg" src="{{src}}"></image>
+    <label>借阅书籍</label>
+  </navigator>
+</view>
+
+<view class="table1">
+  <navigator url="/pages/returnQRcode/returnQRcode">
+  <image class="crowImg" src="{{src}}"></image>
+    <label>归还书籍</label>
+  </navigator>
+</view>
+

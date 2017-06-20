@@ -1,0 +1,8 @@
+.classname{
+  font-family: "微软雅黑",serif;
+  font-size: 40rpx;
+  text-align: center;
+  text-decoration-line:underline;
+  color: #27AE60; 
+  margin-top:20rpx;
+}

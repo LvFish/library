@@ -1,0 +1,47 @@
+<view class="test_content">
+ <view  class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+<view class="line"></view>
+<view class="table1">
+  <navigator url="/pages/borrowBlank/borrowBlank">
+  <image class="crowImg" src="{{src}}"></image>
+    <label>借书栏</label>
+     
+  </navigator>
+</view>
+
+<view class="table1">
+  <navigator url="/pages/myBorrow/myBorrow">
+  <image class="crowImg" src="{{src}}"></image>
+    <label>我的借阅</label>
+  </navigator>
+</view>
+ 
+ <view class="table1">
+  <navigator url="/pages/history/history">
+  <image class="crowImg" src="{{src}}"></image>
+    <label>借阅历史</label>
+  </navigator>
+</view>
+
+ <!--<view class="table1">
+  <image class="crowImg" src="{{src}}"></image>
+    <label>交押金</label>
+</view>-->
+
+  <view class="table1" bindtap="changePassword">
+  <image class="crowImg" src="{{src}}"></image>
+    <label>修改密码</label>
+  </view>
+
+  <view class="table1" bindtap="change">
+  <image class="crowImg" src="{{src}}"></image>
+    <label>切换用户/注销登录</label>
+  </view>
+
+  <!--<navigator url="/pages/message/message">
+    <button>我的消息</button>
+  </navigator>-->
+</view>

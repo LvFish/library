@@ -1,0 +1,19 @@
+<view class="section">
+    <form bindsubmit="formBindsubmit">
+    <picker mode="date" value="{{date}}" start="{{start_date}}" end="{{end_date}}" bindchange="bindDateChange">
+    
+    <button class="title">点击选择日期</button>
+    </picker>
+    <view class="picker">{{date}}</view>
+
+    <!--<picker mode="time" value="{{time}}" start="{{start_time}}" end="{{end_time}}" bindchange="bindTimeChange">
+    <button class="title">点击选择时间</button>
+    </picker>
+    <view class="picker">{{time}}</view>-->
+
+    <view class="sub">
+        <button type="primary" form-type="submit" >确定预约</button>
+    </view>
+    </form>
+
+</view>

@@ -1,0 +1,129 @@
+page{
+  height:100%;
+ background-color:#eeeeee;
+}
+.content{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F8F8F8;
+  padding-bottom:120rpx;
+}
+
+
+.search_input{
+    background-color: white; 
+    float:right;
+    position: absolute;
+    top: 20rpx;
+    font-family: "微软雅黑",serif;
+    font-size: 40rpx;
+    width:70%;
+    border: 1rpx solid black;
+    border-radius: 0rpx;
+    border-bottom-left-radius: 25rpx;
+    border-top-left-radius: 25rpx;
+    height: 70rpx;
+    margin-top: 20rpx;
+    margin-bottom: 15rpx;
+    right:160rpx;
+   
+    
+}
+/*.search_input-palceholder{
+  font-size: 40rpx;
+  padding-right:50rpx;
+
+}*/
+.button{
+   height: 71rpx;
+  line-height: 70rpx;
+  width: 120rpx;
+  position: fixed;
+  top: 40rpx;
+  right:40rpx;
+  border-radius: 0rpx;
+  border-bottom-right-radius: 25rpx;
+  border-top-right-radius: 25rpx;
+  border: 1rpx solid black;
+  color:ghostwhite;
+  background-color: #27AE60;
+  text-align: center;
+  font-size: 40rpx;
+}
+
+/*.submit{
+    float: right;
+    width: 80rpx;
+    height: 60rpx;
+    position: relative;
+    top: 38rpx;
+    right: 100rpx;
+    font-size: 26rpx;
+}*/
+
+.sub{
+  position: relative;
+  float: left;
+  margin-left: 5rpx;
+  margin-top: 7rpx;
+  z-index: 1;
+}
+
+.classes{
+    /*clear: both;*/
+    position: relative;
+    top: 110rpx;
+    left: 10rpx;
+    height: 45rpx;
+    line-height: 45rpx;
+    background-color: #fff;
+}
+
+.name{
+    float: left;
+    width: 210rpx;
+    /*height: 45rpx; */
+    border: 1rpx solid #27AE60;
+    font-family: "微软雅黑",serif;
+    font-size: 30rpx;
+    text-align: center;
+    
+}
+
+.title{
+    font-family: "微软雅黑",serif;
+    text-align: center;
+    font-size:27rpx;
+    color: #27AE60;
+    line-height: 60rpx;
+    height: 60rpx; 
+}
+
+.line{
+   margin-top: 10px;
+  width: 100%;
+  height:100%;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+
+.history{
+  position: relative;
+  font-family: "Microsoft YaHei";
+  font-weight:bold;
+}
+.history_info{
+  background-color:whitesmoke;
+  border-bottom: 2rpx solid #eeeeee;
+}
+button{
+    position: relative;
+    left:240rpx;
+    border: 2rpx solid #999999;
+    border-radius: 50rpx;
+    font-family: "Microsoft YaHei";
+    font-weight:bold;
+    
+}

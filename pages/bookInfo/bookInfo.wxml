@@ -1,0 +1,80 @@
+<view class="content" scrolly-y="true">
+<loading hidden = "{{hide}}">加载中...</loading>
+
+  <view class="generalize">
+    <image src="{{bookInfo.url}}" class="book_img"></image>
+    <view class="bookInfo">
+      <view>书名:{{bookInfo.bookName}}</view>
+      <view>作者:{{bookInfo.author}}</view>
+      <view>版本号:{{bookInfo.edition}}</view>
+      <view>藏书量:{{bookNumber}}</view>
+      <view>可借数量:{{leftNumber}}</view>
+      <!--<view>索书号:{{bookInfo.search____}}</view>-->
+      <view>出版社:{{bookInfo.publish}}</view>
+    </view>
+  </view>
+
+
+
+
+
+<view class="all">
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">序</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">目录</view>  
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">内容简介</view>  
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">书评和导读</view> 
+</view>  
+  
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">   
+    <swiper-item>  
+      <view> <text class="initials" selectable="true">{{bookInfo.review}}</text></view>  
+    </swiper-item>   
+    <swiper-item>  
+      <view><text class="initials" selectable="true">{{bookInfo. catcalogue}}</text></view>  
+    </swiper-item>  
+    <swiper-item>  
+      <view><text class="initials" selectable="true">{{bookInfo. introduce}}</text></view>  
+    </swiper-item>  
+    <swiper-item>  
+      <view> <text class="initials" selectable="true">{{bookInfo.sss}}</text></view>  
+    </swiper-item> 
+   
+   
+</swiper>  
+</view>
+ 
+
+   <view class="recommend">
+      <view class="tital">相关推荐</view>
+      <block wx:for="{{recommend}}">
+        <view class="book_content">
+          <view class="book_ex" bindtap="toast" id="{{item.isbn+'@'+item.bookNumber+'@'+item.leftNumber}}">
+            <image src="{{item.url}}" class="book_img"></image>
+            <view class="book_info">
+              <view>书名：{{item.bookName}}</view>
+              <view>作者：{{item.author}}</view>
+              <view>藏书量：{{item.bookNumber}}</view>
+              <view>可借数量：{{item.leftNumber}}</view>
+              <view>isbn：{{item.isbn}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+
+    </view>
+
+ 
+
+  <view class="function">
+    <button class="borrow" type="primary" bindtap="borrowf">借阅</button>
+
+    <button class="reserve" type="warn" bindtap="reservef">预约</button>
+  </view>
+
+
+
+
+
+
+</view>

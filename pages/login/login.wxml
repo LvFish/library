@@ -1,0 +1,24 @@
+
+<image style="width:750rpx"src="/img/log_in.jpg"></image>
+<view class="line"></view>
+<view class="login">
+  <view class="section">
+    <view class="section_title">用户名：</view>
+    <input name="username" placeholder="请输入微信号/手机号" bindinput="usernameInput" />
+  </view>
+  <view class="section">
+    <view class="section_title"><text>密    码：</text></view>
+    <input name="password" password="true" placeholder="密码" bindinput="passwordInput" />
+  </view>
+  <view id="button">
+    <button form-type="submit" bindtap="loginBtnClik">登录</button>
+  </view>
+
+  <view class="help">
+    <navigator url="/pages/register/register" style="float:left;">立即注册</navigator>
+    <navigator url="/pages/forget/forget"  style="float:right;">忘记密码</navigator>
+  </view>
+  <view id ="tishi">
+    {{infoMess}}
+  </view> 
+</view>
